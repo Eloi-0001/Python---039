@@ -16,11 +16,9 @@ while True:
         print('Dados deletados com sucesso!')
     elif escolha == "4" or escolha == "04" or escolha == "quatro" or escolha == "Quatro":
         for registros in lista_registros:
-            print(registros)
-    
+            print(registros) 
     elif escolha == "5" or escolha == "05" or escolha == "cinco" or escolha == "Cinco":
         print('Adeus!! S2')
-
         break
     else:
         print("Não entendi, por favor, tente novamente.")
