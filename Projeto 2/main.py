@@ -1,9 +1,7 @@
 import pandas as pd
+import func as funcao
 
-dados = pd.read_csv("Projeto 2/dados.csv")
+lista_tabelas = ["make", "model", "year", "fuel_type", "transmission"]
 
 
-
-
-filtro_atomatico = dados['transmission'] == "Automatic"
-filtro_manual = dados['transmission'] == "Manual"
+funcao.exibir(lista_tabelas)
