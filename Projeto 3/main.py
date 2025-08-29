@@ -1,9 +1,11 @@
 import pandas as pd
 import plotly.express as px
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import func as funcao
 
-dados = pd.read_csv("Projeto 2/dados.csv")
+dados = pd.read_csv("Projeto 3/dados.csv")
 
-plt.plot(dados)
+anus = dados['year']
+
+plt.hist(x='anus')
 plt.show()

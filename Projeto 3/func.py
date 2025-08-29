@@ -1,5 +1,5 @@
 import pandas as pd
-dados = pd.read_csv("Projeto 2/dados.csv")
+dados = pd.read_csv("Projeto 3/dados.csv")
 
 
 def exibir(lista: list):
