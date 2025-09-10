@@ -16,10 +16,28 @@ sobreviventes = df[filtro_sobreviventes]
 f_morto = df['Survived'] == 0
 mortos = df[f_morto]
 
+
+# Boxplot que mostra a idade dos sobreviventes.
+
+'''
 plt.boxplot([mortos['Age'], sobreviventes['Age']], labels=['Mortos', 'Sobreviventes'])
 plt.title('Idade por sobrevivência')
 plt.ylabel('Idade')
-plt.show()
 
-sns.histplot(data=df, x='Age', hue='Survived', kde=True, bins=30, palette={0: 'red', 1: 'green'}, alpha=0.6)
 plt.show()
+'''
+
+# histrograma que mostra a idade dos sobreviventes.
+
+'''
+sns.histplot(data=df, x='Age', hue='Survived', kde=True, bins=30, palette={0: 'red', 1: 'green'}, alpha=0.6)
+
+plt.show()
+'''
+
+# Boxplot exibe o genero e a idade das pessoas que embarcaram no titanic.
+
+'''
+sns.boxplot(data=df, x='Sex', y='Age', hue='Sex')
+plt.show()
+'''
