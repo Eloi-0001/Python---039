@@ -24,7 +24,7 @@ plt.boxplot([mortos['Age'], sobreviventes['Age']], labels=['Mortos', 'Sobreviven
 plt.title('Idade por sobrevivência')
 plt.ylabel('Idade')
 
-plt.show()
+plt.savefig('Projeto 4/graficos/kde1.png')
 '''
 
 # histrograma que mostra a idade dos sobreviventes.
@@ -32,12 +32,13 @@ plt.show()
 '''
 sns.histplot(data=df, x='Age', hue='Survived', kde=True, bins=30, palette={0: 'red', 1: 'green'}, alpha=0.6)
 
-plt.show()
+plt.savefig('Projeto 4/graficos/kde2.png')
 '''
 
 # Boxplot exibe o genero e a idade das pessoas que embarcaram no titanic.
 
 '''
 sns.boxplot(data=df, x='Sex', y='Age', hue='Sex')
-plt.show()
+
+plt.savefig('Projeto 4/graficos/kde3.png')
 '''
